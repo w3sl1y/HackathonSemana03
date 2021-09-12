@@ -4,8 +4,23 @@ function unique(arr) {
   }
 
 //Ejercicio #1
+let arr = ['nap', 'teachers', 'cheaters', 'PAN', 'ear', 'era', 'hectares', 'are']
 
+//nap, pan -> anp
+//ear, era, are -> aer
+//cheaters, hectares, teachers -> aceehrst
 
+const aclean = (arr) => {
+    let map = new Map();
+
+    for(let word of array){
+        let sorted = word.tolowerCase().split('').sort().join('');
+        map.set(sorted, word);
+    }
+    return Array.from(map.values());
+}
+
+console.log(aclean(arr));
 
 //Ejercicio #2
 let map = new Map();
